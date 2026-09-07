@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="../src/output.css" rel="stylesheet" />
+
+    <title>MTi JavaScript Project</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen bg-white text-black">
+    <header
+      class="bg-black text-white shadow-md border-b border-red-600 fixed top-0 left-0 w-full z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4"
+      >
+        <!-- Logo -->
+        <h1 class="text-xl md:text-2xl font-bold tracking-wide">
+          MTi JavaScript Project
+        </h1>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#" class="hover:text-red-500 transition">Home</a>
+          <a href="#" class="hover:text-red-500 transition">Lessons</a>
+          <a href="#" class="hover:text-red-500 transition">Projects</a>
+          <a href="#" class="hover:text-red-500 transition">Contact</a>
+        </nav>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex gap-3">
+          <button
+            class="border border-red-600 text-red-500 px-4 py-2 rounded hover:bg-red-600 hover:text-white transition"
+          >
+            Login
+          </button>
+
+          <button
+            class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition"
+          >
+            Register
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-white text-3xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-black border-t border-red-600"
+      >
+        <nav class="flex flex-col px-4 py-4 space-y-4">
+          <a href="#" class="hover:text-red-500 transition">Home</a>
+          <a href="#" class="hover:text-red-500 transition">Lessons</a>
+          <a href="#" class="hover:text-red-500 transition">Projects</a>
+          <a href="#" class="hover:text-red-500 transition">Contact</a>
+
+          <button
+            class="w-full border border-red-600 text-red-500 py-2 rounded hover:bg-red-600 hover:text-white transition"
+          >
+            Login
+          </button>
+
+          <button
+            class="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700 transition"
+          >
+            Register
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Spacer because header is fixed -->
+    <div class="h-20"></div>
+
+    <main class="flex-1 mx-auto px- py-16 bg-white max-w-6xl mt-[10vh]">
+      <h2 class="text-4xl font-bold mb-10 text-center text-black">
+        HTML & JavaScript Learning Notes
+      </h2>
+
+      <ul class="space-y-8">
+        <li class="border-b pb-6">
+          <h3 class="text-2xl font-bold text-red-600 mb-3">What is HTML?</h3>
+
+          <p class="text-gray-700 leading-8 text-lg">
+            HTML stands for HyperText Markup Language. It is the foundation of
+            every website. HTML is used to structure webpages by creating
+            headings, paragraphs, images, buttons, forms, and many other
+            elements.
+          </p>
+        </li>
+
+        <li class="border-b pb-6">
+          <h3 class="text-2xl font-bold text-red-600 mb-3">
+            Importance of HTML
+          </h3>
+
+          <p class="text-gray-700 leading-8 text-lg">
+            HTML helps browsers understand how content should appear on
+            webpages. Without HTML, websites would not have proper structure or
+            organization.
+          </p>
+        </li>
+
+        <li class="border-b pb-6">
+          <h3 class="text-2xl font-bold text-red-600 mb-3">
+            What is JavaScript?
+          </h3>
+
+          <p class="text-gray-700 leading-8 text-lg">
+            JavaScript is a programming language used to add interactivity to
+            websites. It allows developers to create dynamic and responsive user
+            experiences.
+          </p>
+        </li>
+
+        <li class="border-b pb-6">
+          <h3 class="text-2xl font-bold text-red-600 mb-3">
+            JavaScript and HTML
+          </h3>
+
+          <p class="text-gray-700 leading-8 text-lg">
+            JavaScript works together with HTML by accessing webpage elements
+            and changing their content, styles, and behavior dynamically.
+          </p>
+        </li>
+
+        <li class="border-b pb-6">
+          <h3 class="text-2xl font-bold text-red-600 mb-3">DOM Manipulation</h3>
+
+          <p class="text-gray-700 leading-8 text-lg">
+            DOM Manipulation means using JavaScript to modify HTML elements.
+            Developers can update text, create elements, remove elements, and
+            respond to user interactions.
+          </p>
+        </li>
+
+        <li class="border-b pb-6">
+          <h3 class="text-2xl font-bold text-red-600 mb-3">Event Listeners</h3>
+
+          <p class="text-gray-700 leading-8 text-lg">
+            Event listeners help JavaScript detect actions like button clicks,
+            keyboard typing, mouse movement, and form submissions.
+          </p>
+        </li>
+
+        <li class="border-b pb-6">
+          <h3 class="text-2xl font-bold text-red-600 mb-3">Tailwind CSS</h3>
+
+          <p class="text-gray-700 leading-8 text-lg">
+            Tailwind CSS is a utility-first CSS framework that helps developers
+            build beautiful and responsive websites quickly.
+          </p>
+        </li>
+
+        <li>
+          <h3 class="text-2xl font-bold text-red-600 mb-3">
+            Frontend Development
+          </h3>
+
+          <p class="text-gray-700 leading-8 text-lg">
+            Frontend development combines HTML, CSS, and JavaScript to create
+            modern user interfaces and interactive web applications.
+          </p>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="bg-black text-gray-300 border-t border-red-600">
+      <div
+        class="max-w-6xl mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <div>
+          <h2 class="text-white text-lg font-semibold mb-3">
+            About This Project
+          </h2>
+
+          <p class="text-sm leading-7">
+            This project helps students practice HTML, Tailwind CSS, and
+            JavaScript together in one simple application.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-white text-lg font-semibold mb-3">Topics Covered</h2>
+
+          <ul class="space-y-2 text-sm">
+            <li>HTML Structure</li>
+            <li>Tailwind CSS Styling</li>
+            <li>JavaScript Basics</li>
+            <li>DOM Manipulation</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-white text-lg font-semibold mb-3">MTi Courses</h2>
+
+          <p class="text-sm leading-7">
+            Helping students build modern frontend development skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 text-center py-4 text-sm">
+        © 2026 MTi Courses. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
