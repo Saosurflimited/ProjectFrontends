@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <link href="../src/output.css" rel="stylesheet" />
 
@@ -74,100 +78,398 @@
       </div>
     </header>
 
-    <!-- Spacer because header is fixed -->
-    <div class="h-20"></div>
+    <div class="h-14"></div>
 
-    <main class="flex-1 mx-auto px- py-16 bg-white max-w-6xl mt-[10vh]">
-      <h2 class="text-4xl font-bold mb-10 text-center text-black">
-        HTML & JavaScript Learning Notes
-      </h2>
+    <main class="flex-1 mx-auto w-full max-w-6xl px-4 py-10 bg-white">
+      <div class="text-center mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Frontend Development
+        </h2>
 
-      <ul class="space-y-8">
-        <li class="border-b pb-6">
-          <h3 class="text-2xl font-bold text-red-600 mb-3">What is HTML?</h3>
+        <p class="max-w-2xl mx-auto text-gray-600 text-lg leading-8">
+          A collection of notes covering the essential technologies used to
+          build modern, responsive, and interactive websites.
+        </p>
+      </div>
 
-          <p class="text-gray-700 leading-8 text-lg">
-            HTML stands for HyperText Markup Language. It is the foundation of
-            every website. HTML is used to structure webpages by creating
-            headings, paragraphs, images, buttons, forms, and many other
-            elements.
+      <div class="space-y-8">
+        <section
+          class="border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition"
+        >
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6"
+          >
+            <div class="flex items-center gap-4">
+              <span
+                class="flex items-center justify-center w-12 h-12 rounded-xl bg-red-600 text-white font-bold text-lg"
+              >
+                01
+              </span>
+
+              <div>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">
+                  HTML
+                </h3>
+
+                <p class="text-gray-500">HyperText Markup Language</p>
+              </div>
+            </div>
+
+            <button
+              class="text-red-600 font-semibold hover:text-red-800 transition"
+            >
+              Explore →
+            </button>
+          </div>
+
+          <p class="text-gray-700 leading-8 text-lg mb-7">
+            HTML is the standard markup language used to structure webpages. It
+            provides the foundation of a website by organizing headings,
+            paragraphs, images, links, buttons, forms, and other elements.
           </p>
-        </li>
 
-        <li class="border-b pb-6">
-          <h3 class="text-2xl font-bold text-red-600 mb-3">
-            Importance of HTML
-          </h3>
+          <h4 class="text-lg font-bold text-gray-900 mb-4">
+            Important Concepts
+          </h4>
 
-          <p class="text-gray-700 leading-8 text-lg">
-            HTML helps browsers understand how content should appear on
-            webpages. Without HTML, websites would not have proper structure or
-            organization.
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-7"
+          >
+            <div class="bg-gray-50 rounded-lg p-4">HTML document structure</div>
+            <div class="bg-gray-50 rounded-lg p-4">Headings & paragraphs</div>
+            <div class="bg-gray-50 rounded-lg p-4">Links & images</div>
+            <div class="bg-gray-50 rounded-lg p-4">Lists</div>
+            <div class="bg-gray-50 rounded-lg p-4">HTML attributes</div>
+            <div class="bg-gray-50 rounded-lg p-4">Forms & inputs</div>
+            <div class="bg-gray-50 rounded-lg p-4">Semantic HTML</div>
+            <div class="bg-gray-50 rounded-lg p-4">Tables</div>
+            <div class="bg-gray-50 rounded-lg p-4">HTML comments</div>
+          </div>
+
+          <h4 class="text-lg font-bold text-gray-900 mb-3">Example</h4>
+
+          <pre
+            class="bg-gray-950 text-gray-100 p-5 rounded-xl overflow-x-auto text-sm leading-7"
+          ><code>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="#"&gt;Learn More&lt;/a&gt;</code></pre>
+        </section>
+
+        <section
+          class="border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition"
+        >
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6"
+          >
+            <div class="flex items-center gap-4">
+              <span
+                class="flex items-center justify-center w-12 h-12 rounded-xl bg-red-600 text-white font-bold text-lg"
+              >
+                02
+              </span>
+
+              <div>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">
+                  CSS
+                </h3>
+
+                <p class="text-gray-500">Cascading Style Sheets</p>
+              </div>
+            </div>
+
+            <button
+              class="text-red-600 font-semibold hover:text-red-800 transition"
+            >
+              Explore →
+            </button>
+          </div>
+
+          <p class="text-gray-700 leading-8 text-lg mb-7">
+            CSS controls how HTML elements look on a webpage. It is used for
+            colors, typography, spacing, layouts, positioning, animations,
+            responsive designs, and visual effects.
           </p>
-        </li>
 
-        <li class="border-b pb-6">
-          <h3 class="text-2xl font-bold text-red-600 mb-3">
-            What is JavaScript?
-          </h3>
+          <h4 class="text-lg font-bold text-gray-900 mb-4">
+            Important Concepts
+          </h4>
 
-          <p class="text-gray-700 leading-8 text-lg">
-            JavaScript is a programming language used to add interactivity to
-            websites. It allows developers to create dynamic and responsive user
-            experiences.
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-7"
+          >
+            <div class="bg-gray-50 rounded-lg p-4">CSS selectors</div>
+            <div class="bg-gray-50 rounded-lg p-4">Colors & backgrounds</div>
+            <div class="bg-gray-50 rounded-lg p-4">Typography</div>
+            <div class="bg-gray-50 rounded-lg p-4">Margin & padding</div>
+            <div class="bg-gray-50 rounded-lg p-4">Flexbox</div>
+            <div class="bg-gray-50 rounded-lg p-4">CSS Grid</div>
+            <div class="bg-gray-50 rounded-lg p-4">Positioning</div>
+            <div class="bg-gray-50 rounded-lg p-4">Media queries</div>
+            <div class="bg-gray-50 rounded-lg p-4">Animations</div>
+          </div>
+
+          <h4 class="text-lg font-bold text-gray-900 mb-3">Example</h4>
+
+          <pre
+            class="bg-gray-950 text-gray-100 p-5 rounded-xl overflow-x-auto text-sm leading-7"
+          ><code>h1 {
+  color: red;
+  font-size: 32px;
+  text-align: center;
+}</code></pre>
+        </section>
+
+        <section
+          class="border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition"
+        >
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6"
+          >
+            <div class="flex items-center gap-4">
+              <span
+                class="flex items-center justify-center w-12 h-12 rounded-xl bg-red-600 text-white font-bold text-lg"
+              >
+                03
+              </span>
+
+              <div>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">
+                  Tailwind CSS
+                </h3>
+
+                <p class="text-gray-500">Utility-First CSS Framework</p>
+              </div>
+            </div>
+
+            <button
+              class="text-red-600 font-semibold hover:text-red-800 transition"
+            >
+              Explore →
+            </button>
+          </div>
+
+          <p class="text-gray-700 leading-8 text-lg mb-7">
+            Tailwind CSS is a utility-first CSS framework that provides small,
+            reusable utility classes for quickly building modern and responsive
+            interfaces directly in HTML.
           </p>
-        </li>
 
-        <li class="border-b pb-6">
-          <h3 class="text-2xl font-bold text-red-600 mb-3">
-            JavaScript and HTML
-          </h3>
+          <h4 class="text-lg font-bold text-gray-900 mb-4">
+            Important Concepts
+          </h4>
 
-          <p class="text-gray-700 leading-8 text-lg">
-            JavaScript works together with HTML by accessing webpage elements
-            and changing their content, styles, and behavior dynamically.
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-7"
+          >
+            <div class="bg-gray-50 rounded-lg p-4">Utility classes</div>
+            <div class="bg-gray-50 rounded-lg p-4">Colors</div>
+            <div class="bg-gray-50 rounded-lg p-4">Spacing</div>
+            <div class="bg-gray-50 rounded-lg p-4">Flexbox & Grid</div>
+            <div class="bg-gray-50 rounded-lg p-4">Responsive breakpoints</div>
+            <div class="bg-gray-50 rounded-lg p-4">Width & height</div>
+            <div class="bg-gray-50 rounded-lg p-4">Rounded corners</div>
+            <div class="bg-gray-50 rounded-lg p-4">Hover & focus</div>
+            <div class="bg-gray-50 rounded-lg p-4">Positioning</div>
+          </div>
+
+          <h4 class="text-lg font-bold text-gray-900 mb-3">Example</h4>
+
+          <pre
+            class="bg-gray-950 text-gray-100 p-5 rounded-xl overflow-x-auto text-sm leading-7"
+          ><code>&lt;button class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700"&gt;
+  Click Me
+&lt;/button&gt;</code></pre>
+        </section>
+
+        <section
+          class="border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition"
+        >
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6"
+          >
+            <div class="flex items-center gap-4">
+              <span
+                class="flex items-center justify-center w-12 h-12 rounded-xl bg-red-600 text-white font-bold text-lg"
+              >
+                04
+              </span>
+
+              <div>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">
+                  SCSS
+                </h3>
+
+                <p class="text-gray-500">Sassy CSS</p>
+              </div>
+            </div>
+
+            <button
+              class="text-red-600 font-semibold hover:text-red-800 transition"
+            >
+              Explore →
+            </button>
+          </div>
+
+          <p class="text-gray-700 leading-8 text-lg mb-7">
+            SCSS is a CSS preprocessor that extends CSS with features such as
+            variables, nesting, mixins, functions, and reusable styles. SCSS is
+            compiled into regular CSS that browsers can understand.
           </p>
-        </li>
 
-        <li class="border-b pb-6">
-          <h3 class="text-2xl font-bold text-red-600 mb-3">DOM Manipulation</h3>
+          <h4 class="text-lg font-bold text-gray-900 mb-4">
+            Important Concepts
+          </h4>
 
-          <p class="text-gray-700 leading-8 text-lg">
-            DOM Manipulation means using JavaScript to modify HTML elements.
-            Developers can update text, create elements, remove elements, and
-            respond to user interactions.
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-7"
+          >
+            <div class="bg-gray-50 rounded-lg p-4">Variables</div>
+            <div class="bg-gray-50 rounded-lg p-4">Nesting</div>
+            <div class="bg-gray-50 rounded-lg p-4">Mixins</div>
+            <div class="bg-gray-50 rounded-lg p-4">Functions</div>
+            <div class="bg-gray-50 rounded-lg p-4">Partials</div>
+            <div class="bg-gray-50 rounded-lg p-4">Inheritance</div>
+            <div class="bg-gray-50 rounded-lg p-4">Operators</div>
+            <div class="bg-gray-50 rounded-lg p-4">Reusable styles</div>
+            <div class="bg-gray-50 rounded-lg p-4">Compilation</div>
+          </div>
+
+          <h4 class="text-lg font-bold text-gray-900 mb-3">Example</h4>
+
+          <pre
+            class="bg-gray-950 text-gray-100 p-5 rounded-xl overflow-x-auto text-sm leading-7"
+          ><code>$primary-color: red;
+
+.button {
+  background-color: $primary-color;
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: darkred;
+  }
+}</code></pre>
+        </section>
+
+        <section
+          class="border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition"
+        >
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6"
+          >
+            <div class="flex items-center gap-4">
+              <span
+                class="flex items-center justify-center w-12 h-12 rounded-xl bg-red-600 text-white font-bold text-lg"
+              >
+                05
+              </span>
+
+              <div>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">
+                  JavaScript
+                </h3>
+
+                <p class="text-gray-500">Programming Language for the Web</p>
+              </div>
+            </div>
+
+            <button
+              class="text-red-600 font-semibold hover:text-red-800 transition"
+            >
+              Explore →
+            </button>
+          </div>
+
+          <p class="text-gray-700 leading-8 text-lg mb-7">
+            JavaScript is a programming language that makes websites interactive
+            and dynamic. It can respond to user actions, manipulate HTML and
+            CSS, validate forms, communicate with APIs, and build complete web
+            applications.
           </p>
-        </li>
 
-        <li class="border-b pb-6">
-          <h3 class="text-2xl font-bold text-red-600 mb-3">Event Listeners</h3>
+          <h4 class="text-lg font-bold text-gray-900 mb-4">
+            Important Concepts
+          </h4>
 
-          <p class="text-gray-700 leading-8 text-lg">
-            Event listeners help JavaScript detect actions like button clicks,
-            keyboard typing, mouse movement, and form submissions.
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-7"
+          >
+            <div class="bg-gray-50 rounded-lg p-4">Variables</div>
+            <div class="bg-gray-50 rounded-lg p-4">Data types</div>
+            <div class="bg-gray-50 rounded-lg p-4">Operators</div>
+            <div class="bg-gray-50 rounded-lg p-4">Conditions</div>
+            <div class="bg-gray-50 rounded-lg p-4">Loops</div>
+            <div class="bg-gray-50 rounded-lg p-4">Functions</div>
+            <div class="bg-gray-50 rounded-lg p-4">Arrays & objects</div>
+            <div class="bg-gray-50 rounded-lg p-4">DOM manipulation</div>
+            <div class="bg-gray-50 rounded-lg p-4">Event listeners</div>
+            <div class="bg-gray-50 rounded-lg p-4">Form validation</div>
+            <div class="bg-gray-50 rounded-lg p-4">Async / Await</div>
+            <div class="bg-gray-50 rounded-lg p-4">Fetch API</div>
+          </div>
+
+          <h4 class="text-lg font-bold text-gray-900 mb-3">Example</h4>
+
+          <pre
+            class="bg-gray-950 text-gray-100 p-5 rounded-xl overflow-x-auto text-sm leading-7"
+          ><code>const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+  alert("Button clicked!");
+});</code></pre>
+        </section>
+
+        <section class="rounded-2xl bg-gray-950 text-white p-6 md:p-8">
+          <div class="flex items-center gap-4 mb-6">
+            <span
+              class="flex items-center justify-center w-12 h-12 rounded-xl bg-red-600 font-bold text-lg"
+            >
+              06
+            </span>
+
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold">
+                Frontend Development
+              </h3>
+
+              <p class="text-gray-400">Putting everything together</p>
+            </div>
+          </div>
+
+          <p class="text-gray-300 leading-8 text-lg mb-8">
+            Frontend development combines different technologies to create
+            complete user interfaces. Each technology has a different role, but
+            they work together to create modern websites and web applications.
           </p>
-        </li>
 
-        <li class="border-b pb-6">
-          <h3 class="text-2xl font-bold text-red-600 mb-3">Tailwind CSS</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div class="border border-gray-700 rounded-xl p-5">
+              <h4 class="font-bold text-red-400 mb-2">HTML</h4>
+              <p class="text-gray-400 text-sm">Creates the structure.</p>
+            </div>
 
-          <p class="text-gray-700 leading-8 text-lg">
-            Tailwind CSS is a utility-first CSS framework that helps developers
-            build beautiful and responsive websites quickly.
-          </p>
-        </li>
+            <div class="border border-gray-700 rounded-xl p-5">
+              <h4 class="font-bold text-red-400 mb-2">CSS</h4>
+              <p class="text-gray-400 text-sm">Controls the appearance.</p>
+            </div>
 
-        <li>
-          <h3 class="text-2xl font-bold text-red-600 mb-3">
-            Frontend Development
-          </h3>
+            <div class="border border-gray-700 rounded-xl p-5">
+              <h4 class="font-bold text-red-400 mb-2">Tailwind</h4>
+              <p class="text-gray-400 text-sm">Speeds up styling.</p>
+            </div>
 
-          <p class="text-gray-700 leading-8 text-lg">
-            Frontend development combines HTML, CSS, and JavaScript to create
-            modern user interfaces and interactive web applications.
-          </p>
-        </li>
-      </ul>
+            <div class="border border-gray-700 rounded-xl p-5">
+              <h4 class="font-bold text-red-400 mb-2">SCSS</h4>
+              <p class="text-gray-400 text-sm">Organizes advanced CSS.</p>
+            </div>
+
+            <div class="border border-gray-700 rounded-xl p-5">
+              <h4 class="font-bold text-red-400 mb-2">JavaScript</h4>
+              <p class="text-gray-400 text-sm">Adds functionality.</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="bg-black text-gray-300 border-t border-red-600">
@@ -210,13 +512,17 @@
       </div>
     </footer>
 
-    <script>
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
+    <section
+      id="scrollToTop"
+      class="bg-red-700 w-14 h-14 flex justify-center items-center fixed right-28 bottom-6 rounded-full"
+    >
+      <div
+        class="bg-white flex justify-center items-center w-12 h-12 text-red-700 rounded-full"
+      >
+        <i class="ri-arrow-up-line"></i>
+      </div>
+    </section>
 
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
+    <script src="../javascript/index.js"></script>
   </body>
 </html>
