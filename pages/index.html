@@ -20,12 +20,10 @@
       <div
         class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4"
       >
-        <!-- Logo -->
         <h1 class="text-xl md:text-2xl font-bold tracking-wide">
           MTi JavaScript Project
         </h1>
 
-        <!-- Desktop Navigation -->
         <nav class="hidden md:flex gap-6 text-sm">
           <a href="#" class="hover:text-red-500 transition">Home</a>
           <a href="#" class="hover:text-red-500 transition">Lessons</a>
@@ -33,7 +31,6 @@
           <a href="#" class="hover:text-red-500 transition">Contact</a>
         </nav>
 
-        <!-- Desktop Buttons -->
         <div class="hidden md:flex gap-3">
           <button
             class="border border-red-600 text-red-500 px-4 py-2 rounded hover:bg-red-600 hover:text-white transition"
@@ -41,18 +38,19 @@
             Login
           </button>
 
-          <button
+          <a
+            href="../auth/signup.html"
             class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition"
-          >
-            Register
-          </button>
+          > Sign Up</a>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <button id="menuBtn" class="md:hidden text-white text-3xl">☰</button>
+        <button id="menuBtn" class="md:hidden text-white text-3xl">
+          <i id="menuIcon" class="ri-menu-line"></i>
+        </button>
       </div>
 
-      <!-- Mobile Menu -->
+      <!-- mobile view below -->
+
       <div
         id="mobileMenu"
         class="hidden md:hidden bg-black border-t border-red-600"
@@ -116,6 +114,7 @@
             </div>
 
             <button
+              id="modalBtn"
               class="text-red-600 font-semibold hover:text-red-800 transition"
             >
               Explore →
@@ -127,6 +126,41 @@
             provides the foundation of a website by organizing headings,
             paragraphs, images, links, buttons, forms, and other elements.
           </p>
+
+          <!-- modal start -->
+          <section
+            id="modal"
+            class="fixed inset-0 z-50 hidden items-center justify-center bg-black/20 px-4"
+          >
+            <div class="w-full max-w-lg rounded-md bg-white p-6 shadow-2xl">
+              <h1 class="mb-4 text-3xl font-bold text-gray-900">
+                Explore more about HTML
+              </h1>
+
+              <p class="mb-8 text-lg leading-8 text-gray-600">
+                HTML stands for HyperText Markup Language. Learn how to
+                structure webpages using headings, paragraphs, images, links,
+                forms, and semantic elements.
+              </p>
+
+              <div class="flex items-center justify-between gap-4">
+                <button
+                  id="cancelModal"
+                  class="rounded-md border border-gray-300 px-6 py-3 font-semibold text-gray-700"
+                >
+                  Cancel
+                </button>
+
+                <a
+                  href=""
+                  class="rounded-md bg-red-600 px-6 py-3 font-semibold text-white"
+                >
+                  Explore
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- modal end -->
 
           <h4 class="text-lg font-bold text-gray-900 mb-4">
             Important Concepts
@@ -152,7 +186,7 @@
             class="bg-gray-950 text-gray-100 p-5 rounded-xl overflow-x-auto text-sm leading-7"
           ><code>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
 &lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;a href="#"&gt;Learn More&lt;/a&gt;</code></pre>
+             &lt;a href="#"&gt;Learn More&lt;/a&gt;</code></pre>
         </section>
 
         <section
@@ -178,9 +212,10 @@
             </div>
 
             <button
+              id="modalButton"
               class="text-red-600 font-semibold hover:text-red-800 transition"
             >
-              Explore →
+              Explore → jj
             </button>
           </div>
 
@@ -189,6 +224,45 @@
             colors, typography, spacing, layouts, positioning, animations,
             responsive designs, and visual effects.
           </p>
+
+          <!-- modal start-->
+          <section
+            id="secModal"
+            class="inset-0 hidden fixed px-4 justify-center items-center bg-black/20"
+          >
+            <div class="w-full max-w-lg bg-white shadow-2xl rounded-md p-6">
+              <h1
+                class="text-16 md:text-20 lg:text-2xl mb-4 font-sans font-semibold tracking-wide"
+              >
+                Explore more fitness wonder
+              </h1>
+
+              <p
+                class="text-[18px] md:text-[18px] lg:text-[18px] text-gray-600 mb-8 tracking-wide"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                distinctio sapiente, quae libero esse ! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Atque distinctio sapiente,
+                quae libero esse !
+              </p>
+
+              <div class="flex justify-start items-center gap-2">
+                <button
+                  id="secCancalModal"
+                  class="border-[1px] px-4 border-gray-50 py-2 bg-red-600 rounded hover:bg-black hover:text-white text-white transition ease-in-out duration-300"
+                >
+                  Cancel
+                </button>
+
+                <a
+                  href=""
+                  class="border-[1px] px-4 border-gray-50 py-2 bg-gray-300 rounded hover:bg-black hover:text-white transition ease-in-out duration-300"
+                  >Explore</a
+                >
+              </div>
+            </div>
+          </section>
+          <!-- modal end-->
 
           <h4 class="text-lg font-bold text-gray-900 mb-4">
             Important Concepts
@@ -216,7 +290,7 @@
   color: red;
   font-size: 32px;
   text-align: center;
-}</code></pre>
+           }</code></pre>
         </section>
 
         <section
@@ -514,7 +588,7 @@ button.addEventListener("click", () => {
 
     <section
       id="scrollToTop"
-      class="bg-red-700 w-14 h-14 flex justify-center items-center fixed right-28 bottom-6 rounded-full"
+      class="bg-red-700 w-14 h-14 flex justify-center items-center fixed right-4.5 lg:right-30 bottom-6 rounded-full"
     >
       <div
         class="bg-white flex justify-center items-center w-12 h-12 text-red-700 rounded-full"
